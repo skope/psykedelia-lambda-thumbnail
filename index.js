@@ -14,7 +14,7 @@ exports.handler = (event, context) => {
   const destination = process.env.THUMB_PATH + key.substr(key.lastIndexOf('/'));
 
   const client = new S3({
-    bucket: 'psykedelia'
+    bucket: bucket
   });
 
   client.download(key)
