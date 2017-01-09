@@ -1,0 +1,27 @@
+{
+  "name": "psykedelia-lambda-thumbnail",
+  "version": "0.1.0",
+  "description": "Lambda functions for handling Psykedelia thumbnail creation from S3 bucket",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "aws-sdk": "^2.7.21",
+    "gm": "^1.23.0",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sami Keinänen <skope@iki.fi>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skope/psykedelia-lambda-thumbnail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skope/psykedelia-lambda-thumbnail/issues"
+  },
+  "homepage": "https://github.com/skope/psykedelia-lambda-thumbnail#readme"
+}
