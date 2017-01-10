@@ -23,6 +23,8 @@ if (!fs.existsSync(dirs.build)) {
   fs.mkdirSync(dirs.build);
 }
 
+ncp.stopOnErr = true;
+
 function copyModules(modules, build) {
   return Q.Promise((resolve, reject) => {
     ncp(modules, build + '/node_modules', (err) =>
@@ -93,6 +95,7 @@ copyModules(dirs.modules, dirs.build)
   .then(() => copyIndex(index, dirs.build))
   .then(() => zipFiles(dirs.base, dirs.build))
   .then(() => removeBuildDir(dirs.build))
+  .then(() => console.log('Lambda zip creation completed'))
   .fail((error) => {
     console.error(error);
   });
