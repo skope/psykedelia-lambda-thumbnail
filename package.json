@@ -14,7 +14,8 @@
     "ncp": "^2.0.0"
   },
   "scripts": {
-    "create-lambda": "scripts/create-lambda.js"
+    "create-lambda": "scripts/create-lambda.js",
+    "deploy": "scripts/deploy.js"
   },
   "keywords": [],
   "author": "Sami Keinänen <skope@iki.fi>",

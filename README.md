@@ -11,3 +11,4 @@ There are three required environment variables which should be set to lambda.
 ### NPM commands
 
 - `npm run create-lambda` Creates zip package of the function code which can be deployed
+- `npm run deploy` Deploys the lambda function to AWS
